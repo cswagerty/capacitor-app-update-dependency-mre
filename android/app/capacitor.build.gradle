@@ -12,6 +12,7 @@ dependencies {
     implementation project(':capacitor-browser')
     implementation project(':capawesome-capacitor-app-update')
     implementation project(':capacitor-splash-screen')
+    implementation project(':capacitor-rate-app')
 
 }
 
