@@ -2,6 +2,25 @@
 
 ⚡️ Capacitor app to create a minimal, reproducible example. Only changes made to template were to make versions consistent with project where issue was found and add the [capacitor-rate-app](https://github.com/Nodonisko/capacitor-rate-app) plugin which has a conflicted version requirement for com.google.android.play:core.
 
+See dependency tree excerpt below:
+```
++--- project :capawesome-capacitor-app-update
+|    +--- project :capacitor-android (*)
+|    +--- androidx.appcompat:appcompat:1.6.1 (*)
+|    +--- com.google.android.play:app-update:2.1.0
+|    |    +--- com.google.android.gms:play-services-basement:18.1.0
+|    |    |    +--- androidx.collection:collection:1.0.0 -> 1.1.0 (*)
+|    |    |    +--- androidx.core:core:1.2.0 -> 1.10.0 (*)
+|    |    |    \--- androidx.fragment:fragment:1.0.0 -> 1.5.6 (*)
+|    |    +--- com.google.android.gms:play-services-tasks:18.0.2
+|    |    |    \--- com.google.android.gms:play-services-basement:18.1.0 (*)
+|    |    \--- com.google.android.play:core-common:2.0.3
+\--- project :capacitor-rate-app
+     +--- project :capacitor-android (*)
+     +--- androidx.appcompat:appcompat:1.6.1 (*)
+     \--- com.google.android.play:core:1.10.3
+```
+
 ## Steps to reproduce
 
 1. Clone this repo
