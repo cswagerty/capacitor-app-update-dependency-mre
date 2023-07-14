@@ -10,9 +10,11 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "open:android": "npx cap open android"
   },
   "dependencies": {
+    "@capacitor/android": "^5.2.1",
     "@capacitor/browser": "latest",
     "@capacitor/core": "latest",
     "@capacitor/splash-screen": "latest"
