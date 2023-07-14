@@ -11,13 +11,15 @@
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "open:android": "npx cap open android"
+    "open:android": "npx cap open android",
+    "sync": "npx cap sync"
   },
   "dependencies": {
     "@capacitor/android": "^5.2.1",
-    "@capacitor/browser": "latest",
-    "@capacitor/core": "latest",
-    "@capacitor/splash-screen": "latest"
+    "@capacitor/browser": "^5.0.5",
+    "@capawesome/capacitor-app-update": "^5.0.1",
+    "@capacitor/core": "^5.1.0",
+    "@capacitor/splash-screen": "^5.0.5"
   },
   "devDependencies": {
     "@capacitor/cli": "latest",
